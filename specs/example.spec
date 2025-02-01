@@ -7,6 +7,23 @@ Every heading in this file denotes a scenario. Every bulleted point denotes a st
 To execute this specification, run
 	gauge specs
 
-1.koşum testi
+Tum ekranların kontrolleri ve anasayfaya donus
 -------------
-*"5" saniye bekle
+* "3" saniye bekle
+* "askincan.gul@testinium.com" Kullanici adi ve "Mart2022*" sifresi ile uyelik girisi yapilir.
+* MainScreen genel tus ve textbox kontrolleri gerceklestirilir.
+* TransferMoney ekraninin icerik kontrolleri gerceklestirilir.
+* AddMoney ekraninin icerik kontrolleri gerceklestirilir.
+* Edit account icerik kontrolleri gerceklestirilir.
+
+AddMoney para yükleme işlev kontrol
+-------------
+* "askincan.gul@testinium.com" Kullanici adi ve "Mart2022*" sifresi ile uyelik girisi yapilir.
+* AddMoney para yükleme islemi denemesi.
+
+Edit Account Isim Degisimi
+---------------
+* "askincan.gul@testinium.com" Kullanici adi ve "Mart2022*" sifresi ile uyelik girisi yapilir.
+* Edit account Name Degisimi gerceklesitirilir ve anasayfaya donulur.
+
+

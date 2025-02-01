@@ -1,0 +1,102 @@
+[
+  {
+    "key": "username",
+    "value": "(//input[@class=\"css-11aywtz r-6taxm2 r-1eh6qqt r-z2wwpe r-rs99b7 r-h3s6tt r-1qhn6m8\"])[1]",
+    "type": "xpath"
+  },
+  {
+    "key": "password",
+    "value": "(//input[@class=\"css-11aywtz r-6taxm2 r-1eh6qqt r-z2wwpe r-rs99b7 r-h3s6tt r-1qhn6m8\"])[2]",
+    "type": "xpath"
+  },
+  {
+    "key": "loginButton",
+    "value": "div[class='css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1awozwy r-169ebfh r-z2wwpe r-h3s6tt r-1777fci r-tsynxw r-13qz1uu']",
+    "type": "css"
+  },
+  {
+    "key": "openMoneyTransferButton",
+    "value": "div[class='css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1awozwy r-169ebfh r-z2wwpe r-h3s6tt r-1777fci r-tsynxw r-11c0sde r-13qz1uu']",
+    "type": "css"
+  },
+  {
+    "key": "editAccountButton",
+    "value": "(//div[@class='css-146c3p1 r-jwli3a r-1b43r93'])[4]",
+    "type": "xpath"
+  },
+  {
+    "key": "addMoneyButton",
+    "value": "(//div[@class='css-146c3p1 r-jwli3a r-1b43r93'])[3]",
+    "type": "xpath"
+  },
+  {
+    "key": "transferMoneyButton",
+    "value": "(//div[@class='css-146c3p1 r-jwli3a r-1b43r93'])[2]",
+    "type": "xpath"
+  },
+  {
+    "key": "popUpCloseButton",
+    "value": "div[class='css-146c3p1 r-lrvibr r-1loqt21']",
+    "type": "css"
+  },
+  {
+    "key": "warningPopUp",
+    "value": "div[class='css-175oi2r r-1awozwy r-18u37iz r-1wtj0ep r-1wzrnnt r-nsbfu8 r-13qz1uu']",
+    "type": "css"
+  },
+  {
+    "key": "newAccountName",
+    "value": "(//div[@class='css-146c3p1 r-1ozpqpt r-yv33h5 r-1b43r93'])[1]",
+    "type": "xpath"
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  }
+
+
+
+
+
+]

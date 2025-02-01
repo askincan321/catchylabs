@@ -1,0 +1,69 @@
+[
+  {
+    "key": "cardNumberInput",
+    "value": "(//input[@class='css-11aywtz r-6taxm2 r-1mqtkb5 r-z2wwpe r-rs99b7 r-h3s6tt r-1qhn6m8'])[1]",
+    "type": "xpath"
+  },
+  {
+    "key": "cardHolderInput",
+    "value": "(//input[@class='css-11aywtz r-6taxm2 r-1mqtkb5 r-z2wwpe r-rs99b7 r-h3s6tt r-1qhn6m8'])[2]",
+    "type": "xpath"
+  },
+  {
+    "key": "expiryDateInput",
+    "value": "(//input[@class='css-11aywtz r-6taxm2 r-1mqtkb5 r-z2wwpe r-rs99b7 r-h3s6tt r-1qhn6m8'])[3]",
+    "type": "xpath"
+  },
+  {
+    "key": "cvvInput",
+    "value": "(//input[@class='css-11aywtz r-6taxm2 r-1mqtkb5 r-z2wwpe r-rs99b7 r-h3s6tt r-1qhn6m8'])[4]",
+    "type": "xpath"
+  },
+  {
+    "key": "amountInput",
+    "value": "(//input[@class='css-11aywtz r-6taxm2 r-1mqtkb5 r-z2wwpe r-rs99b7 r-h3s6tt r-1qhn6m8'])[5]",
+    "type": "xpath"
+  },
+  {
+    "key": "addMoneyAddButton",
+    "value": "div[class='css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1awozwy r-169ebfh r-z2wwpe r-h3s6tt r-1777fci r-tsynxw r-13qz1uu']",
+    "type": "css"
+  },
+  {
+    "key": "errorMessage",
+    "value": "div[class='css-146c3p1 r-yv33h5 r-1jb9un0 r-1enofrn r-14gqq1x']",
+    "type": "css"
+  },
+  {
+  "key": "cardNumberText",
+  "value": "//div[text()='Card number']",
+  "type": "xpath"
+  },
+  {
+    "key": "cardHolderText",
+    "value": "//div[text()='Card holder']",
+    "type": "xpath"
+  },
+  {
+    "key": "expiryDateText",
+    "value": "//div[text()='Expiry date']",
+    "type": "xpath"
+  },
+  {
+    "key": "cvvText",
+    "value": "//div[text()='CVV']",
+    "type": "xpath"
+  },
+  {
+    "key": "amountText",
+    "value": "(//div[text()='Amount'])[2]",
+    "type": "xpath"
+  },
+  {
+    "key": "addMoneyFrameClick",
+    "value": "div[class='css-175oi2r r-1awozwy r-14lw9ot r-1xfd6ze r-1rr9as1 r-129l8ac r-1ik5qf4 r-e7q0ms']",
+    "type": "css"
+  }
+
+
+]

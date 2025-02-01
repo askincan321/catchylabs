@@ -1,0 +1,108 @@
+Created by askincangul on 1.02.2025
+
+This is a concept file with following syntax for each concept.
+# <username> Kullanici adi ve <password> sifresi ile uyelik girisi yapilir.
+* waitPageLoadCompleteJs
+
+* "username" elementinin görünür olması kontrol edilir "10"
+* "password" elementinin görünür olması kontrol edilir "10"
+* "loginButton" elementinin görünür olması kontrol edilir "10"
+
+* "username" elementinin tıklanabilir olması kontrol edilir "10"
+* "username" elementine <username> değerini yaz
+
+* "password" elementinin tıklanabilir olması kontrol edilir "10"
+* "password" elementine <password> değerini yaz
+
+* "loginButton" elementinin tıklanabilir olması kontrol edilir "10"
+* "loginButton" elementine tıkla
+
+* "openMoneyTransferButton" elementinin görünür olması kontrol edilir "10"
+* "openMoneyTransferButton" elementinin tıklanabilir olması kontrol edilir "10"
+* "openMoneyTransferButton" elementine tıkla
+
+
+# MainScreen genel tus ve textbox kontrolleri gerceklestirilir.
+* waitPageLoadCompleteJs
+
+* "transferMoneyButton" elementinin görünür olması kontrol edilir "10"
+* "transferMoneyButton" elementinin tıklanabilir olması kontrol edilir "10"
+* "addMoneyButton" elementinin görünür olması kontrol edilir "10"
+* "addMoneyButton" elementinin tıklanabilir olması kontrol edilir "10"
+* "editAccountButton" elementinin görünür olması kontrol edilir "10"
+* "editAccountButton" elementinin tıklanabilir olması kontrol edilir "10"
+
+# TransferMoney ekraninin icerik kontrolleri gerceklestirilir.
+* "transferMoneyButton" elementine tıkla
+* "senderAccountDrpList" elementinin görünür olması kontrol edilir "10"
+* "receiverAccountDrpList" elementinin görünür olması kontrol edilir "10"
+* "amountInput" elementinin görünür olması kontrol edilir "10"
+* "popUpCloseButton" elementinin görünür olması kontrol edilir "10"
+* "sendButton" elementinin görünür olmadığı kontrol edilir "10"
+
+* "senderAccountDrpList" elementinin tıklanabilir olması kontrol edilir "10"
+* "receiverAccountDrpList" elementinin tıklanabilir olması kontrol edilir "10"
+* "amountInput" elementinin tıklanabilir olması kontrol edilir "10"
+* "amountInput" elementine "1234" değerini yaz
+* "sendButton" elementinin görünür olması kontrol edilir "10"
+* "popUpCloseButton" elementine tıkla
+
+
+# AddMoney ekraninin icerik kontrolleri gerceklestirilir.
+
+* "addMoneyButton" elementine tıkla
+* "popUpCloseButton" elementinin görünür olması kontrol edilir "20"
+* "cardNumberText" elementinin görünür olması kontrol edilir "20"
+* "cardHolderText" elementinin görünür olması kontrol edilir "20"
+* "expiryDateText" elementinin görünür olması kontrol edilir "20"
+* "cvvText" elementinin görünür olması kontrol edilir "20"
+* "amountText" elementinin görünür olması kontrol edilir "20"
+* "addMoneyFrameClick" elementine tıkla
+
+* "cardNumberInput" elementine tıkla
+* "cardNumberInput" elementine "1" değerini yaz
+* "addMoneyAddButton" elementine tıkla
+* "cardHolderInput" elementine "A" değerini yaz
+* "addMoneyAddButton" elementine tıkla
+* "expiryDateInput" elementine "1" değerini yaz
+* "cvvInput" elementine "1" değerini yaz
+ "amountInput" elementine "1" değerini yaz
+* "2" saniye bekle
+* "popUpCloseButton" elementine tıkla
+
+# Edit account icerik kontrolleri gerceklestirilir.
+* "editAccountButton" elementine tıkla
+* "accountNameEditInput" elementinin değerini temizle
+* "2" saniye bekle
+* "popUpCloseButton" elementine tıkla
+
+
+# AddMoney para yükleme islemi denemesi.
+* "addMoneyButton" elementine tıkla
+* "popUpCloseButton" elementinin görünür olması kontrol edilir "20"
+* "cardNumberText" elementinin görünür olması kontrol edilir "20"
+* "cardHolderText" elementinin görünür olması kontrol edilir "20"
+* "expiryDateText" elementinin görünür olması kontrol edilir "20"
+* "cvvText" elementinin görünür olması kontrol edilir "20"
+* "amountText" elementinin görünür olması kontrol edilir "20"
+* "addMoneyFrameClick" elementine tıkla
+
+* "cardNumberInput" elementine tıkla
+* "cardNumberInput" elementine "1234123412341234" değerini yaz
+* "addMoneyAddButton" elementine tıkla
+* "cardHolderInput" elementine "AskinCanGul" değerini yaz
+* "addMoneyAddButton" elementine tıkla
+* "expiryDateInput" elementine "1026" değerini yaz
+* "cvvInput" elementine "110" değerini yaz
+* "amountInput" elementine "1234" değerini yaz
+* "2" saniye bekle
+* "popUpCloseButton" elementine tıkla
+
+
+# Edit account Name Degisimi gerceklesitirilir ve anasayfaya donulur.
+* "editAccountButton" elementine tıkla
+* "accountNameEditInput" elementinin değerini temizle
+* "accountNameEditInput" elementine "NaneLimons" değerini yaz
+* "accountNameUpdateButton" elementine tıkla
+* "2" saniye bekle
+* "newAccountName" elementinin text değeri "NaneLimons" değerine eşit mi

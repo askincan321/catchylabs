@@ -648,20 +648,10 @@ public class StepImplementation {
         methods.removeProductIsVisible(key, element);
     }
 
-    @Step("<key> istenilen miktarda ürün bulunmamaktadır görünürse, <element> pop-up'ı kapatılır. <kategori> elementli kategoriye gidilir, <product> locator'lı random ürün seçilir, <size> random beden seçilip <button> sepete eklenir.")
-    public void stepIfThereIsNoStockAddAnother(String key, String element, String kategori, String product, String size, String button){
-        methods.ifThereIsNoStockAddAnother(key,element,kategori,product,size,button);
-    }
     @Step("<key> elementi varsa, elemente <text> textini yaz ve entera bas -> ortam için")
     public void haveKeySendClick(String key, String element) {
         methods.enterSendElementIsVisible(key, element);
     }
-
-    @Step("<key> elementi görünür değilse, random <element> seçime devam edilir.")
-    public void bcUrunBedenBul(String key, String element) {
-        methods.bcSelectProductIsVisible(key, element);
-    }
-
 
     @Step("<key> elementi görünürse, <element> listesinden random seçim yapılır.")
     public void randomIfVisible(String key, String element) {
@@ -676,51 +666,6 @@ public class StepImplementation {
     @Step("<key> elementi görünür değilse element bulunana kadar bir sayfa geri dönülür ve tekrar random <element> seçilir.")
     public void turnBackAndSelectRandomItems(String key, String element){
         methods.whileElementIsNotVisibleTurnBack(key, element);
-    }
-
-    @Step("<key> elementi text'inde bulunan fiyat değerini ayıkla.")
-    public void sayisalDegeriAyikla(String key) {
-        String OSNAMES = methods.findElement(methods.getBy(key)).getText();
-        String[] parts = OSNAMES.split(" ");
-        String OS = parts[0];
-        OS = OS.replace(",", ".");
-        kargo_ucretsiz_fiyat = Float.parseFloat(OS);
-        System.out.println(kargo_ucretsiz_fiyat);
-    }
-
-    public float kargo_ucretsiz_fiyat; //ürün detaydaki kargo ücretini toplama için float olarak tutar
-    public float sepetteki_kargo_ucretsiz_fiyat; //sepetteki kargo ücretini toplama için float olarak tutar
-
-    @Step("Ürün detaydaki kargo ücretsiz fiyat aralığının sepetteki <key> indirimli fiyatının, <element> genel toplam kargo fiyatı ve <value> sepet kargo fiyatıile uyuştuğu kontrol edilir.")
-    public void dene(String key, String element, String value) {
-        System.out.println(kargo_ucretsiz_fiyat);
-        String actualText = methods.findElement(methods.getBy(key)).getText();
-        String rsActual = actualText.replace("TL", "");
-        String rActual = rsActual.replace(",", ".");
-        float fActualNew = Float.parseFloat(rActual);
-        System.out.println("Ürünün İndirimli Fiyatı: " + fActualNew);
-        String cargoPrice = methods.findElement(methods.getBy(element)).getText();
-
-        if (fActualNew >= kargo_ucretsiz_fiyat) {
-            System.out.println("Beklenen: ÜCRETSİZ");
-            System.out.println("Gerçekleşen: " + cargoPrice);
-            assertEquals("ÜCRETSİZ", cargoPrice);
-            System.out.println("Beklenen: Kargo Bedava");
-            System.out.println("Gerçekleşen: " + methods.findElement(methods.getBy(value)).getText());
-            assertEquals("Kargo Bedava", methods.findElement(methods.getBy(value)).getText());
-        } else {
-            assertNotEquals("ÜCRETSİZ", cargoPrice);
-            System.out.println(kargo_ucretsiz_fiyat);
-            System.out.println("Kargo ücretsiz limiti :" + kargo_ucretsiz_fiyat
-                    + " sağlanmadığı için " + cargoPrice + " kargo ücreti uygulanmıştır.");
-            String OSNAMES = methods.findElement(methods.getBy(value)).getText();
-            String[] parts = OSNAMES.split(" ");
-            String OS = parts[0];
-            OS = OS.replace(",", ".");
-            sepetteki_kargo_ucretsiz_fiyat = Float.parseFloat(OS);
-            System.out.println(sepetteki_kargo_ucretsiz_fiyat);
-            assertEquals(kargo_ucretsiz_fiyat, sepetteki_kargo_ucretsiz_fiyat);
-        }
     }
 
     @Step("<key> iframe'e girilir.")
