@@ -27,3 +27,7 @@ Edit Account Isim Degisimi
 * Edit account Name Degisimi gerceklesitirilir ve anasayfaya donulur.
 
 
+Edit Account Isim Degisimi 2
+---------------
+* "askincan.gul@testinium.com" Kullanici adi ve "Mart2022*" sifresi ile uyelik girisi yapilir.
+* Edit account Name ilk haline getirilir ve anasayfaya donulur.

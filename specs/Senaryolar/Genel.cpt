@@ -106,3 +106,12 @@ This is a concept file with following syntax for each concept.
 * "accountNameUpdateButton" elementine tıkla
 * "2" saniye bekle
 * "newAccountName" elementinin text değeri "NaneLimons" değerine eşit mi
+
+
+# Edit account Name ilk haline getirilir ve anasayfaya donulur.
+* "editAccountButton" elementine tıkla
+* "accountNameEditInput" elementinin değerini temizle
+* "accountNameEditInput" elementine "NaneLimons" değerini yaz
+* "accountNameUpdateButton" elementine tıkla
+* "2" saniye bekle
+* "newAccountName" elementinin text değeri "RealyN" değerine eşit mi
